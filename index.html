@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="w-full h-[120vh]">
+    <h1 class="font-arial capitalize text-black flex justify-center items-center mt-6 text-4xl">1 input credit card</h1>
+    <div class="flex justify-center items-center mx-auto mt-6 w-[60%]">
+        <figure class="relative">
+            <img class="w-[700px] object-cover rounded-lg" src="img/card.jpeg" alt="">
+            <figcaption>
+                <div class="flex justify-start items-start">
+                    <img class="w-14 absolute top-0" src="img/chip.png" alt="">
+                    <img class="w-16 absolute top-0 right-0" src="img/visa.png" alt="">
+                </div>
+                <div class="w-full flex justify-center items-center absolute top-1/2">
+                    <h2 id="number" class="font-arial font-bold text-2xl md:text-4xl xl:text-5xl text-white"></h2>
+                </div>
+                <div class="w-full flex absolute bottom-0">
+                    <div class="w-1/2 flex justify-start items-center ml-3">
+                        <h3 id="name" class="font-arial uppercase text-white md:text-2xl"></h3>
+                    </div>
+                    <div class="w-1/2 flex justify-end items-center mr-3">
+                        <h3 id="cvv" class="font-arial text-white md:text-2xl"></h3>
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="flex flex-wrap justify-center items-center flex-col border-2 border-blue-700 w-[45%] mx-auto mt-8 p-5">
+        <label class="font-arial text-2xl mt-4" for="cardNumber">Card Number</label>
+        <input class="w-[80%] border-2 border-green-500 flex text-2xl" type="text" id="cardNumber">
+        <label class="font-arial text-2xl mt-6" for="ownerName">Owner Name</label>
+        <input class="w-[80%] border-2 border-green-500 flex text-2xl" type="text" id="ownerName">
+        <label class="font-arial text-2xl mt-6" for="CVV2">CVV2</label>
+        <input class="w-[80%] border-2 border-green-500 flex text-2xl" type="text" id="CVV2">
+    </div>
+</body>
+<script src="js/master.js"></script>
+
+</html>
